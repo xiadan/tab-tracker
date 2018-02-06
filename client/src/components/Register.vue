@@ -40,7 +40,7 @@ export default {
     async register () {
       await AuthenticationService.register({
         email: this.email,
-        password: this.password
+        password: this.password,
       })
     }
   }

@@ -15,9 +15,9 @@ app.use(bodyParser.json())
 // 跨來源資源共享（Cross-Origin Resource Sharing (CORS)）
 app.use(cors())
 
-app.get('/status', (req, res) => {
+app.post('/register', (req, res) => {
   res.send({
-    message: 'hello word!'
+    message: `Hello ${req.body.email}! Your user was registered! Have fun!`
   })
 })
 
